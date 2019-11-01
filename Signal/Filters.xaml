@@ -1,0 +1,593 @@
+﻿<Window x:Name="Filters1" x:Class="Signal.Filters"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Фильтры по категориям" Height="600" Width="600" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Icon="Data/images/ico.png" FontSize="14" FontFamily="Tahoma" Loaded="Filters1_Loaded" Closing="Filters1_Closing" ShowInTaskbar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TabControl>
+            <TabItem Header="Страна">
+                <Grid Background="White">
+                    <Grid Margin="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Name="Country_avstralia" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\avstraliya.gif"/>
+                                <Label Grid.Column="1" Content="Австралия" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_greatBritan" Grid.Row="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\velikobritaniya.gif"/>
+                                <Label Grid.Column="1" Content="Великобритания" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_vengria" Grid.Row="2" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\hungary.gif"/>
+                                <Label Grid.Column="1" Content="Венгрия" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_easternEurop" Grid.Row="3" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\Eastern_Europe_PA.png"/>
+                                <Label Grid.Column="1" Content="Восточная Европа" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Germany" Grid.Row="4" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\germany.gif"/>
+                                <Label Grid.Column="1" Content="Германия" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Europ" Grid.Row="5" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\europ.jpg"/>
+                                <Label Grid.Column="1" Content="Европа" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Israil" Grid.Row="6" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\izrail.gif"/>
+                                <Label Grid.Column="1" Content="Израиль" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Iran" Grid.Row="7" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\iran.gif"/>
+                                <Label Grid.Column="1" Content="Иран" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Ispany" Grid.Row="8" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\ispaniya.gif"/>
+                                <Label Grid.Column="1" Content="Испания" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Canada" Grid.Row="9" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\canada.gif"/>
+                                <Label Grid.Column="1" Content="Канада" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Kipr" Grid.Row="10" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\cypr.gif"/>
+                                <Label Grid.Column="1" Content="Кипр" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_China" Grid.Row="11" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\knr.gif"/>
+                                <Label Grid.Column="1" Content="Китай" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Poland" Grid.Row="12" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\polsha.gif"/>
+                                <Label Grid.Column="1" Content="Польша" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Russia" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\russia.gif"/>
+                                <Label Grid.Column="1" Content="Россия" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Roman" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\ruminiya.gif"/>
+                                <Label Grid.Column="1" Content="Румыния" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_NorthAmerica" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\karta-severnoy-ameriki.jpg"/>
+                                <Label Grid.Column="1" Content="Северная Америка" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_NorthCorea" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\severnayakoreya.gif"/>
+                                <Label Grid.Column="1" Content="Северная корея" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_USA" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="200"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\usa.gif"/>
+                                <Label Grid.Column="1" Content="Соединенные штаты" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Franse" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\france.gif"/>
+                                <Label Grid.Column="1" Content="Франция" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_CentralEurop" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="200"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\central.jpg"/>
+                                <Label Grid.Column="1" Content="Центральная Европа" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Sweden" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\shveciya.gif"/>
+                                <Label Grid.Column="1" Content="Швеция" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_SouthAfrica" Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\south_africa_map4.jpg"/>
+                                <Label Grid.Column="1" Content="Южная Африка" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Japan" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\yapan.gif"/>
+                                <Label Grid.Column="1" Content="Япония" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Unknown" Grid.Row="10" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\image.jpg"/>
+                                <Label Grid.Column="1" Content="Неизвестно" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_Allower" Grid.Row="11" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\world.jpg"/>
+                                <Label Grid.Column="1" Content="Общемировая" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                        <CheckBox Name="Country_any" Grid.Row="12" Grid.Column="1" VerticalAlignment="Center" Margin="2" IsChecked="True" Checked="Country_any_Checked">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Width="30" Height="20" Margin="2" VerticalAlignment="Center" Source="Data\flag\world.jpg"/>
+                                <Label Grid.Column="1" Content="Любые" VerticalAlignment="Center"/>
+                            </Grid>
+                        </CheckBox>
+                    </Grid>
+                    
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Категории сигнала">
+                <Grid Background="White">
+                    <Grid Margin ="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <CheckBox Name="Millitary" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Военные"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Radars" Grid.Row="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Радары"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Active" Grid.Row="2" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Активные"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Disabled" Grid.Row="3" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Неактивные"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Radiolovers" Grid.Row="4" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Радиолюбители"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Commerical" Grid.Row="5" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Коммерческие"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Avia" Grid.Row="6" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Авиационные"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Sea" Grid.Row="7" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Морские"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Analog" Grid.Row="8" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Аналоговые"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Digital" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Цифровые"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Trank" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Транковые"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Official" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Служебные"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Satellite" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Спутниковые"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Navigation" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Навигационные"></Label>
+                        </CheckBox>
+                        <CheckBox Name="Jamming" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Помеховые"></Label>
+                        </CheckBox>
+                        <CheckBox Name="NumberStations" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Номерные станции"></Label>
+                        </CheckBox>
+                        <CheckBox Name="ExactTime" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Точного времени"></Label>
+                        </CheckBox>
+                        <CheckBox Name="category_any" Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" Margin="2" IsChecked="True" Checked="category_any_Checked">
+                            <Label Margin="2" Content="Любые"></Label>
+                        </CheckBox>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Диапазон рабочих частот">
+                <Grid Background="White">
+                    <Grid Margin="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <CheckBox Name="MF" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Диапазон СВ (MF) от 300000 до 3000000 ГЦ"></Label>
+                        </CheckBox>
+                        <CheckBox Name="HF" Grid.Row="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Диапазон КВ (HF) от 3000000 до 30000000 ГЦ"></Label>
+                        </CheckBox>
+                        <CheckBox Name="VHF" Grid.Row="2" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Диапазон УКВ (VHF) от 30000000 до 300000000 ГЦ"></Label>
+                        </CheckBox>
+                        <CheckBox Name="UHF" Grid.Row="3" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Диапазон УКВ (UHF) от 300000000 до 3000000000 ГЦ"></Label>
+                        </CheckBox>
+                        <CheckBox Name="SHF" Grid.Row="4" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="Диапазон УКВ (SHF) от 3000000000 до 30000000000 ГЦ"></Label>
+                        </CheckBox>
+                        <CheckBox Name="diap_any" Grid.Row="5" VerticalAlignment="Center" Margin="2" IsChecked="True" Checked="diap_any_Checked">
+                            <Label Margin="2" Content="Любые"></Label>
+                        </CheckBox>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Модуляция">
+                <Grid Background="White">
+                    <Grid Margin="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Name="FM" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="FM"></Label>
+                        </CheckBox>
+                        <CheckBox Name="AM" Grid.Row="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="AM"></Label>
+                        </CheckBox>
+                        <CheckBox Name="CW" Grid.Row="2" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="CW"></Label>
+                        </CheckBox>
+                        <CheckBox Name="C4FM" Grid.Row="3" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="C4FM"></Label>
+                        </CheckBox>
+                        <CheckBox Name="QAM" Grid.Row="4" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="QAM"></Label>
+                        </CheckBox>
+                        <CheckBox Name="VSB" Grid.Row="5" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="8VSB"></Label>
+                        </CheckBox>
+                        <CheckBox Name="FMCW" Grid.Row="6" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="FMCW"></Label>
+                        </CheckBox>
+                        <CheckBox Name="CDMA" Grid.Row="7" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="CDMA"></Label>
+                        </CheckBox>
+                        <CheckBox Name="TDMA" Grid.Row="8" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="TDMA"></Label>
+                        </CheckBox>
+                        <CheckBox Name="FDMA" Grid.Row="9" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="FDMA"></Label>
+                        </CheckBox>
+                        <CheckBox Name="OFDM" Grid.Row="10" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="OFDM"></Label>
+                        </CheckBox>
+                        <CheckBox Name="FMOP" Grid.Row="11" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="FMOP"></Label>
+                        </CheckBox>
+                        <CheckBox Name="FSK" Grid.Row="12" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="FSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="BFSK"  Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="BFSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="MFSK" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="MFSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="MSK" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="MSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="GMSK" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="GMSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="FFSK" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="FFSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="AFSK" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="AFSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="GFSK" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="GFSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="IFK" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="IFK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="PSK" Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="PSK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="PAM" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="PAM"></Label>
+                        </CheckBox>
+                        <CheckBox Name="PPM" Grid.Row="10" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="PPM"></Label>
+                        </CheckBox>
+                        <CheckBox Name="OOK" Grid.Row="11" Grid.Column="1" VerticalAlignment="Center" Margin="2">
+                            <Label Margin="2" Content="OOK"></Label>
+                        </CheckBox>
+                        <CheckBox Name="mod_any" Grid.Row="12" Grid.Column="1" VerticalAlignment="Center" Margin="2" IsChecked="True" Checked="mod_any_Checked">
+                            <Label Margin="2" Content="Любые"></Label>
+                        </CheckBox>
+                        
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Демодуляция">
+                <Grid Background="White">
+                    <Grid Margin="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="9*"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="Основные" VerticalAlignment="Center"/>
+                        <Label Content="Специфические" Grid.Column="1" VerticalAlignment="Center"/>
+                        <Grid Grid.Row="1" Margin="15,0,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition Height="4*"/>
+                            </Grid.RowDefinitions>
+                            <CheckBox Name ="FM2" Grid.Row="0" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="FM"></Label>
+                            </CheckBox>
+                            <CheckBox Name="AM2" Grid.Row="1" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="AM"></Label>
+                            </CheckBox>
+                            <CheckBox Name="CW2" Grid.Row="2" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="CW"></Label>
+                            </CheckBox>
+                            <CheckBox Name="SB2" Grid.Row="3" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="SB"></Label>
+                            </CheckBox>
+                            <CheckBox Name="mod_any2" Grid.Row="4" VerticalAlignment="Center" Margin="2" IsChecked="True">
+                                <Label Margin="2" Content="Любые"></Label>
+                            </CheckBox>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="1" Margin="15,0,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <CheckBox Name="NFM" Grid.Row="0" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="NFM"></Label>
+                            </CheckBox>
+                            <CheckBox Name="WFM" Grid.Row="1" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="WFM"></Label>
+                            </CheckBox>
+                            <CheckBox Name="DSB" Grid.Row="2" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="DSB"></Label>
+                            </CheckBox>
+                            <CheckBox Name="USB" Grid.Row="3" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="USB"></Label>
+                            </CheckBox>
+                            <CheckBox Name="SC_FDMA" Grid.Row="4" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="SC-FDMA"></Label>
+                            </CheckBox>
+                            <CheckBox Name="SSB" Grid.Row="5" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="SSB"></Label>
+                            </CheckBox>
+                            <CheckBox Name="FHSS_TTDM" Grid.Row="6" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="FHSS-TTDM"></Label>
+                            </CheckBox>
+                            <CheckBox Name="RAW" Grid.Row="7" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="RAW"></Label>
+                            </CheckBox>
+                            <CheckBox Name="None"  Grid.Row="8" VerticalAlignment="Center" Margin="2">
+                                <Label Margin="2" Content="None"></Label>
+                            </CheckBox>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="FindSignals" Grid.Row="2" Width="100" Height="25" Content="Найти" FontSize="12" Click="FindSignals_Click"/>
+    </Grid>
+</Window>
